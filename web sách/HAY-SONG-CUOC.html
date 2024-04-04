@@ -1,0 +1,326 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HÃY SỐNG CUỘC ĐỜI NHƯ BẠN MUỐN</title>
+    <link rel="stylesheet" href="style/truyen.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- This is NavigationBar -->
+    <div class="topMainPage">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="topNav bg-light" style="z-index: 3; position: relative">
+      <nav class="container navbar navbar-expand-lg bg-light navbar-light">
+        <a class="navbar-brand" href="index.html">FAHASA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="navbar-brand" href="GIOI-THIEU.html"> Giới thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                >Thể loại</a
+              >
+              <div
+                class="dropdown-menu mega-dropdown-category"
+                aria-labelledby="navbarDropdown"
+              >
+                <div class="d-flex flex-column dropdown-distance">
+                  <a href="Hai-so-phan.html">Tiểu thuyết</a>
+                  <a href="TOI-AC.html">Thần thoại</a>
+                  <a href="NGHI-GIAU.html">Làm giàu</a>
+                  <a href="HAY-SONG-CUOC.html">Kinh tế</a>
+                  <a href="NHA-GIA-KIM.html">Tâm lý </a>
+                  <a href="TOI-THAY.html">Thiếu nhi</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-toggle="dropdown"
+                >Giá tiền</a
+              >
+              <div
+                class="dropdown-menu mega-dropdown-status"
+                aria-labelledby="navbarDropdown"
+              >
+                <div class="d-flex flex-column dropdown-distance">
+                  <a>100-200</a>
+                  <a>200-500</a>
+                  <a>trên 500</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0 custome-navbar-search">
+            <input
+              class="form-control mr-sm-2 w-100 border-search"
+              type="tìm kiếm"
+              placeholder="Tìm kiếm"
+              aria-label="Search"
+            />
+            <svg
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search search-icon"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </div>
+          <div class="ml-lg-2 btnLogin" href="">
+            <a style="color: #ffffff" href="Dang_ki.html">Đăng ký</a>
+          </div>
+          <div class="ml-lg-2 btnLogin">
+            <a style="color: #ffffff" href="Dang_nhap.html">Đăng nhập</a>
+          </div>
+          <div class="ml-lg-2 btnLogin">
+            <a style="color: #ffffff" href="GIO-HANG.html">Giỏ hàng </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="chapter-info">
+      <div class="container" style="font-size: 18px">
+        <div>
+          <div class="row updated-Container ml-1 mt-2">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <img
+                class="updated-story-image"
+                src="image/image_174655.jpg"
+                style="height: 350px"
+              />
+
+              <button
+                type="button"
+                class="btn btn-primary btn-block"
+                style="font-weight: bold"
+                onclick="addToCart()"
+              >
+                Mua
+              </button>
+              <script>
+                function sendOTP() {
+                  alert("Đã thêm vào giỏ hàng");
+                }
+              </script>
+            </div>
+            <div class="col-xl-8 col-lg-6 col-md-6">
+              <p class="kieuchu">HÃY SỐNG CUỘC ĐỜI NHƯ BẠN MUỐN</p>
+              <p><b>Giá: 72,000</b></p>
+              <p>Tác giả: Pam Grout</p>
+              <p>Dịch giả: Linh Giang</p>
+              <p>Nhà xuất bản: Thế Giới</p>
+              <p>Lượt mua : 12321</p>
+              <div>
+                Hãy sống cuộc đời như bạn muốn, cuốn sách kỹ năng của tác giả
+                Pam Grout sẽ hướng dẫn bạn cách thay đổi thái độ, nắm bắt ý
+                tưởng, và phát triển năng lực tiềm ẩn của bản thân để đạt đến
+                tiềm năng thành công.
+              </div>
+              <div id="demo" class="collapse">
+                Bằng cách nghĩ lớn, mơ lớn và đặt ra các câu hỏi lớn, mỗi người
+                chúng ta chắc chắn sẽ tạo sự khác biệt trong cuộc sống của bản
+                thân và những người xung quanh.<br />
+                Chúng ta luôn luôn đặt ra cho bản thân câu hỏi rằng, làm thế nào
+                để sống một cuộc sống như chúng ta mơ ước? Mà quên mất một thực
+                tế rằng dù đau đáu về một cuộc sống như thế nhưng chúng ta vẫn
+                đang quẩn quanh với những lịch trình hàng ngày, những việc làm
+                nhàm chán đến mức gần như làm tê liệt ý chí vùng vẫy thoát ra
+                khỏi nó. Chúng ta muốn sống khác nhưng vẫn dành quá nhiều thời
+                gian xem tivi mỗi ngày, sa đà vào những bữa tiệc vui chơi quên
+                ngày tháng, vẫn chấp nhận gắn bó với công việc mà mình không yêu
+                thích, v.v… Vâng, để có một cuộc sống như mơ ước, việc bạn chỉ
+                khao khát, thèm muốn và làm một vài hành động đơn lẻ thôi không
+                đủ, bởi để sống khác cần đến sự tổng hòa của rất nhiều yếu
+                tố.<br />
+                Hãy sống cuộc đời như bạn mong muốn sẽ cung cấp cho bạn rất
+                nhiều thông tin đầy đủ và hoàn chỉnh từ những nguyên tắc để sống
+                vĩ đại, những ví dụ điển hình về những con người sống vĩ đại rất
+                gần gũi với chúng ta, từ những cô bé cậu bé tật nguyền hay
+                Mozart và Picasso.Mỗi chương trong cuốn sách tâm lý giáo dục này
+                đều dành những câu hỏi và bài tập thực tế để độc giả có thể thực
+                hành áp dụng nó vào chính cuộc sống của mỗi người! Hãy sống cuộc
+                đời như bạn muốn là cuốn sách hay đáng đọc nếu bạn muốn có những
+                thay đổi tích cực, tìm ra đam mê và theo đuổi đam mê của chính
+                mình.
+              </div>
+              <a href="#demo" data-toggle="collapse">Xem thêm</a>
+            </div>
+            <br />
+            <div class="col-xl-12">
+              <br />
+              <div id="accordion">
+                <hr />
+                <div class="col-12">
+                  <h3>Bình Luận</h3>
+                  <div class="media border p-3">
+                    <img
+                      src="image/cat.jpg"
+                      alt="John Doe"
+                      class="mr-3 mt-3 rounded-circle"
+                      style="width: 60px"
+                    />
+                    <div class="media-body">
+                      <textarea
+                        rows="3"
+                        class="w-100"
+                        placeholder="Thêm bình luận"
+                      ></textarea>
+                      <div class="media p-3">
+                        <img
+                          src="image/cat.jpg"
+                          alt="Jane Doe"
+                          class="mr-3 mt-3 rounded-circle"
+                          style="width: 45px"
+                        />
+                        <div class="media-body">
+                          <h4>
+                            xyz <small><i>01/02/2024 9:20</i></small>
+                          </h4>
+                          <p>Quá hay quá tuyệt vời</p>
+                        </div>
+                      </div>
+                      <div class="media p-3">
+                        <img
+                          src="image/Facebook-Avatar_3.png"
+                          alt="Jane Doe"
+                          class="mr-3 mt-3 rounded-circle"
+                          style="width: 45px"
+                        />
+                        <div class="media-body">
+                          <h4>
+                            abc <small><i>01/01/2024 17:20</i></small>
+                          </h4>
+                          <p>Sách hay, ý nghĩa</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function addToCart() {
+        // Lấy thông tin sách từ trang
+        var bookName = document
+          .querySelector("#chapter-info .kieuchu")
+          .innerText.trim();
+        var bookPrice = parseFloat(
+          document
+            .querySelector("#chapter-info p b")
+            .innerText.trim()
+            .replace(/,/g, "")
+        );
+
+        // Tạo một đối tượng sách
+        var book = {
+          name: bookName,
+          price: bookPrice,
+          quantity: 1, // Số lượng mặc định là 1 khi thêm vào giỏ hàng
+        };
+
+        // Kiểm tra xem giỏ hàng đã được lưu trữ trong localStorage chưa
+        var cart = localStorage.getItem("cart");
+
+        // Nếu giỏ hàng chưa tồn tại, tạo một giỏ hàng mới
+        if (!cart) {
+          cart = [];
+        } else {
+          cart = JSON.parse(cart);
+        }
+
+        // Thêm sách vào giỏ hàng
+        cart.push(book);
+
+        // Lưu giỏ hàng vào localStorage
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        // Hiển thị thông báo khi thêm sách vào giỏ hàng thành công
+        alert("Đã thêm sách vào giỏ hàng");
+      }
+    </script>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <!-- Head content here -->
+      </head>
+
+      <body>
+        <!-- Your HTML content here -->
+
+        <!-- Your HTML content here -->
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var buyButtons = document.querySelectorAll(".btn-buy"); // Lấy tất cả các nút "Mua"
+
+            buyButtons.forEach(function (buyButton) {
+              buyButton.addEventListener("click", function () {
+                var parentRow = this.closest("tr"); // Lấy ra dòng cha của nút "Mua"
+                var productName = parentRow.querySelector(".ten").innerText; // Lấy tên sản phẩm
+                var quantity = parentRow.querySelector(".qty").value; // Lấy số lượng sản phẩm
+                var price = parseInt(
+                  parentRow.querySelector(".pro").getAttribute("data-price")
+                ); // Lấy giá sản phẩm
+                var totalPrice = quantity * price; // Tính tổng tiền của sản phẩm
+
+                // Thêm sản phẩm vào giỏ hàng (có thể là lưu vào cơ sở dữ liệu hoặc giữ trong biến)
+                // Ở đây chỉ in thông tin sản phẩm ra console để minh họa
+                console.log("Đã thêm vào giỏ hàng:");
+                console.log("Tên sản phẩm: " + productName);
+                console.log("Số lượng: " + quantity);
+                console.log(
+                  "Thành tiền: " +
+                    totalPrice.toLocaleString("vi-VN", {
+                      style: "currency",
+                      currency: "VND",
+                    })
+                );
+              });
+            });
+          });
+        </script>
+      </body>
+    </html>
+  </body>
+</html>
+<!-- Đoạn mã HTML -->

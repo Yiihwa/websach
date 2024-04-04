@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LŨ TRẺ ĐƯỜNG TÀU</title>
+    <link rel="stylesheet" href="style/truyen.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- This is NavigationBar -->
+    <div class="topMainPage">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="topNav bg-light" style="z-index: 3; position: relative">
+      <nav class="container navbar navbar-expand-lg bg-light navbar-light">
+        <a class="navbar-brand" href="index.html">FAHASA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="navbar-brand" href="GIOI-THIEU.html"> Giới thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                >Thể loại</a
+              >
+              <div
+                class="dropdown-menu mega-dropdown-category"
+                aria-labelledby="navbarDropdown"
+              >
+                <div class="d-flex flex-column dropdown-distance">
+                  <a href="Hai-so-phan.html">Tiểu thuyết</a>
+                  <a href="TOI-AC.html">Thần thoại</a>
+                  <a href="NGHI-GIAU.html">Làm giàu</a>
+                  <a href="HAY-SONG-CUOC.html">Kinh tế</a>
+                  <a href="NHA-GIA-KIM.html">Tâm lý </a>
+                  <a href="TOI-THAY.html">Thiếu nhi</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-toggle="dropdown"
+                >Giá tiền</a
+              >
+              <div
+                class="dropdown-menu mega-dropdown-status"
+                aria-labelledby="navbarDropdown"
+              >
+                <div class="d-flex flex-column dropdown-distance">
+                  <a>100-200</a>
+                  <a>200-500</a>
+                  <a>trên 500</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0 custome-navbar-search">
+            <input
+              class="form-control mr-sm-2 w-100 border-search"
+              type="tìm kiếm"
+              placeholder="Tìm kiếm"
+              aria-label="Search"
+            />
+            <svg
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search search-icon"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </div>
+          <div class="ml-lg-2 btnLogin" href="">
+            <a style="color: #ffffff" href="Dang_ki.html">Đăng ký</a>
+          </div>
+          <div class="ml-lg-2 btnLogin">
+            <a style="color: #fffcfc" href="Dang_nhap.html">Đăng nhập</a>
+          </div>
+          <div class="ml-lg-2 btnLogin">
+            <a style="color: #ffffff" href="GIO-HANG.html">Giỏ hàng </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="chapter-info">
+      <div class="container" style="font-size: 18px">
+        <div>
+          <div class="row updated-Container ml-1 mt-2">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <img
+                class="updated-story-image"
+                src="image/8935210305824_11.jpg"
+                style="height: 350px"
+              />
+
+              <button
+                type="submit"
+                class="btn btn-primary btn-block"
+                style="font-weight: bold"
+                onclick="sendOTP();"
+              >
+                Mua
+              </button>
+              <script>
+                function sendOTP() {
+                  alert("Đã thêm vào giỏ hàng");
+                }
+              </script>
+            </div>
+            <div class="col-xl-8 col-lg-6 col-md-6">
+              <p class="kieuchu">LŨ TRẺ ĐƯỜNG TÀU</p>
+              <p><b>Giá: 101,000</b></p>
+              <p>Tác giả: E Nesbit</p>
+              <p>Dịch giả: Nguyễn Hồng Hạnh</p>
+              <p>Nhà xuất bản: Dân Trí</p>
+              <p>Lượt mua : 10111</p>
+              <div>
+                Lũ trẻ đường tàu là một trong những tác phẩm kinh điển cho những
+                ai đã và đang là thiếu nhi. Cuốn sách kể về ba đứa trẻ tinh
+                nghịch, trong trẻo, đầy màu sắc của ngôi nhà Ba Ống Khói cùng
+                những tháng ngày sống gần bên đường tàu. Tuy thỉnh thoảng có cãi
+                nhau như các chị em trong bao gia đình khác, nhưng cả ba đứa trẻ
+                đều rất hiếu thảo, yêu thương và biết nghĩ cho nhau.
+              </div>
+              <div id="demo" class="collapse">
+                Tại vùng quê yên bình gần bên đường tàu, những đứa trẻ của ngôi
+                nhà Ba Ống Khói đã có những “phi vụ” để đời, những hành động
+                nhân văn, đầy dũng cảm và những tháng ngày vui sống rất đỗi bình
+                dị đời thường. Song ẩn sâu trong sự bình dị ấy lại là một câu
+                chuyện về lòng can đảm, không ngừng cố gắng vươn lên của con
+                người để vượt lên trên nghịch cảnh cuộc sống.<br />
+
+                Khi nói về Lũ trẻ đường tàu, một độc giả trên Penguin đã nhận
+                xét cuốn sách “là một trong những tác phẩm thiếu nhi kinh điển
+                đầu tiên tôi từng đọc. Tôi không chắc mình sẽ thích nó. Nhưng
+                khi đọc những trang đầu tiên, tôi ngay lập tức bị cuốn vào. E.
+                Nesbit đã khơi gợi thật chính xác cảm giác khi còn là một đứa
+                trẻ”.<br />
+
+                Có lẽ chính bởi sự giản dị, đời thường nhưng đầy sức chạm ấy mà
+                sau hơn một thế kỉ ra mắt, Lũ trẻ đường tàu của Edith Nesbit vẫn
+                luôn là một tượng đài tác phẩm thiếu nhi kinh điển không thể bỏ
+                qua, và là viên ngọc ở lại trong kí ức của nhiều thế hệ độc giả
+                trẻ toàn thế giới.
+              </div>
+              <a href="#demo" data-toggle="collapse">Xem thêm</a>
+            </div>
+            <br />
+            <div class="col-xl-12">
+              <br />
+              <div id="accordion">
+                <hr />
+                <div class="col-12">
+                  <h3>Bình Luận</h3>
+                  <div class="media border p-3">
+                    <img
+                      src="image/cat.jpg"
+                      alt="John Doe"
+                      class="mr-3 mt-3 rounded-circle"
+                      style="width: 60px"
+                    />
+                    <div class="media-body">
+                      <textarea
+                        rows="3"
+                        class="w-100"
+                        placeholder="Thêm bình luận"
+                      ></textarea>
+                      <div class="media p-3">
+                        <img
+                          src="image/cat.jpg"
+                          alt="Jane Doe"
+                          class="mr-3 mt-3 rounded-circle"
+                          style="width: 45px"
+                        />
+                        <div class="media-body">
+                          <h4>
+                            xyz <small><i>01/02/2024 9:20</i></small>
+                          </h4>
+                          <p>Quá hay quá tuyệt vời</p>
+                        </div>
+                      </div>
+                      <div class="media p-3">
+                        <img
+                          src="image/Facebook-Avatar_3.png"
+                          alt="Jane Doe"
+                          class="mr-3 mt-3 rounded-circle"
+                          style="width: 45px"
+                        />
+                        <div class="media-body">
+                          <h4>
+                            abc <small><i>01/01/2024 17:20</i></small>
+                          </h4>
+                          <p>Sách hay, ý nghĩa</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

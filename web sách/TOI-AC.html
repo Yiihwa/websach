@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TỘI ÁC VÀ HÌNH PHẠT</title>
+    <link rel="stylesheet" href="style/truyen.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- This is NavigationBar -->
+    <div class="topMainPage">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="topNav bg-light" style="z-index: 3; position: relative">
+      <nav class="container navbar navbar-expand-lg bg-light navbar-light">
+        <a class="navbar-brand" href="index.html">FAHASA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="navbar-brand" href="GIOI-THIEU.html"> Giới thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                >Thể loại</a
+              >
+              <div
+                class="dropdown-menu mega-dropdown-category"
+                aria-labelledby="navbarDropdown"
+              >
+                <div class="d-flex flex-column dropdown-distance">
+                  <a href="Hai-so-phan.html">Tiểu thuyết</a>
+                  <a href="TOI-AC.html">Thần thoại</a>
+                  <a href="NGHI-GIAU.html">Làm giàu</a>
+                  <a href="HAY-SONG-CUOC.html">Kinh tế</a>
+                  <a href="NHA-GIA-KIM.html">Tâm lý </a>
+                  <a href="TOI-THAY.html">Thiếu nhi</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-toggle="dropdown"
+                >Giá tiền</a
+              >
+              <div
+                class="dropdown-menu mega-dropdown-status"
+                aria-labelledby="navbarDropdown"
+              >
+                <div class="d-flex flex-column dropdown-distance">
+                  <a>100-200</a>
+                  <a>200-500</a>
+                  <a>trên 500</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0 custome-navbar-search">
+            <input
+              class="form-control mr-sm-2 w-100 border-search"
+              type="tìm kiếm"
+              placeholder="Tìm kiếm"
+              aria-label="Search"
+            />
+            <svg
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search search-icon"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </div>
+          <div class="ml-lg-2 btnLogin" href="">
+            <a style="color: #000000" href="Dang_ki.html">Đăng ký</a>
+          </div>
+          <div class="ml-lg-2 btnLogin">
+            <a style="color: #000000" href="Dang_nhap.html">Đăng nhập</a>
+          </div>
+          <div class="ml-lg-2 btnLogin">
+            <a style="color: #000000" href="GIO-HANG.html">Giỏ hàng </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="chapter-info">
+      <div class="container" style="font-size: 18px">
+        <div>
+          <div class="row updated-Container ml-1 mt-2">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <img
+                class="updated-story-image"
+                src="image/sach-hay-toi-ac-va-hinh-phat.jpg"
+                style="height: 350px"
+              />
+
+              <button
+                type="submit"
+                class="btn btn-primary btn-block"
+                style="font-weight: bold"
+                onclick="sendOTP();"
+              >
+                Mua
+              </button>
+              <script>
+                function sendOTP() {
+                  alert("Đã thêm vào giỏ hàng");
+                }
+              </script>
+            </div>
+            <div class="col-xl-8 col-lg-6 col-md-6">
+              <p class="kieuchu">TỘI ÁC VÀ HÌNH PHẠT</p>
+              <p><b>Giá: 101,000</b></p>
+              <p>Tác giả: Fyodor Dostoevsky</p>
+              <p>Dịch giả: Cao Xuân Hạo</p>
+              <p>Nhà xuất bản: Văn Học</p>
+              <p>Lượt mua : 10001</p>
+              <div>
+                "Tội ác và hình phạt là cuốn tiểu thuyết hoàn chỉnh và hay nhất
+                của toàn bộ hệ thống tác phẩm Dostoevsky, nội dung bi thảm nhất
+                của nền văn học nhân loại. Với tấm lòng nhân đạo vô bờ bến, tác
+                giả đã dựng lên một bức tranh ảm đạm về số phận bế tắc của lớp
+                người dưới đáy xã hội Nga, nhất là tầng lớp trẻ trong trắng, là
+                lời tố cáo mãnh liệt tầng lớp tư sản hãnh tiến, giẫm đạp lên".
+              </div>
+              <div id="demo" class="collapse">
+                Tội Ác Và Hình Phạt là cuốn tiểu thuyết hoàn chỉnh và hay nhất
+                trong các tác phẩm của cây bút bậc thầy nước Nga Fyodor
+                Dostoevsky (1821 -1881). Chuyện kể về chàng sinh viên nghèo
+                Raxkônnikốp vì quá lạc lối mà đã giết chết hai chị em bà lão cầm
+                đồ. Những ngày sau đó, Raxkônnikốp rơi vào một bi kịch mới,
+                khủng hoảng tinh thần trầm trọng. Anh càng cố gắng che giấu tội
+                lỗi thì càng tỏ ra lúng túng.Tình yêu sâu sắc, sự hy sinh cao cả
+                và tấm lòng nhân hậu của cô gái Xônya cùng sự quan tâm, yêu
+                thương giúp đỡ của mọi người đã thức tỉnh Raxkônnikốp. Chấm dứt
+                những giằng xé nội tâm, anh đưa ra quyết định: thà bị giam cầm
+                về thể xác còn hơn bị tù đày về tâm hồn.<br />
+
+                Cuốn tiểu thuyết là một trong những tác phẩm có nội dung bi thảm
+                nhất của nền văn học nhân loại. Với tấm lòng nhân đạo vô bờ bến,
+                tác giả đã dựng lên một bức tranh ảm đạm về số phận bế tắc của
+                tầng lớp người dưới đáy xã hội Nga. Tác phẩm còn là lời tố cáo
+                mãnh liệt tầng lớp tư sản hãnh tiến, giẫm đạp lên đạo đức, nhân
+                phẩm, tài năng.<br />
+              </div>
+              <a href="#demo" data-toggle="collapse">XEM THÊM</a>
+            </div>
+            <br />
+            <div class="col-xl-12">
+              <br />
+              <div id="accordion">
+                <hr />
+                <div class="col-12">
+                  <h3>Bình Luận</h3>
+                  <div class="media border p-3">
+                    <img
+                      src="image/cat.jpg"
+                      alt="John Doe"
+                      class="mr-3 mt-3 rounded-circle"
+                      style="width: 60px"
+                    />
+                    <div class="media-body">
+                      <textarea
+                        rows="3"
+                        class="w-100"
+                        placeholder="Thêm bình luận"
+                      ></textarea>
+                      <div class="media p-3">
+                        <img
+                          src="image/cat.jpg"
+                          alt="Jane Doe"
+                          class="mr-3 mt-3 rounded-circle"
+                          style="width: 45px"
+                        />
+                        <div class="media-body">
+                          <h4>
+                            xyz <small><i>01/02/2024 9:20</i></small>
+                          </h4>
+                          <p>Quá hay quá tuyệt vời</p>
+                        </div>
+                      </div>
+                      <div class="media p-3">
+                        <img
+                          src="image/Facebook-Avatar_3.png"
+                          alt="Jane Doe"
+                          class="mr-3 mt-3 rounded-circle"
+                          style="width: 45px"
+                        />
+                        <div class="media-body">
+                          <h4>
+                            abc <small><i>01/01/2024 17:20</i></small>
+                          </h4>
+                          <p>Sách hay, ý nghĩa</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

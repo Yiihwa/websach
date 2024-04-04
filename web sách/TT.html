@@ -1,0 +1,163 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký</title>
+  <link href="style/main_style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/form.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <!-- This is NavigationBar -->
+  <div class="topMainPage">
+    <div class="overlay "></div>
+  </div>
+
+  <div class="topNav  bg-light" style="z-index: 3;position: relative;">
+    <nav class="container navbar navbar-expand-lg bg-light navbar-light">
+      <a class="navbar-brand" href="index.html">FAHASA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="navbar-brand" href="GIOI-THIEU.html" > Giới thiệu</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Thể loại</a>
+            <div class="dropdown-menu mega-dropdown-category" aria-labelledby="navbarDropdown">
+                <div class="d-flex flex-column dropdown-distance">
+                  <a>Tiểu thuyết</a>
+                  <a>Thần thoại</a>
+                  <a>Ngôn Tình</a>
+                  <a>Làm giàu</a>
+                  <a>Kinh tế</a>
+                  <a>Tâm lý </a>
+                  <a>Thiếu nhi</a>
+                </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"   role="button" data-toggle="dropdown">Giá tiền</a>
+            <div class="dropdown-menu mega-dropdown-status" aria-labelledby="navbarDropdown">
+              <div class="d-flex flex-column dropdown-distance">
+                <a>100-200</a>
+                <a>200-500</a>
+                <a>trên 500</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0 custome-navbar-search">
+          <input class="form-control mr-sm-2 w-100 border-search" type="tìm kiếm" placeholder="Tìm kiếm"
+            aria-label="Search">
+          <svg width="16" height="16" fill="currentColor" class="bi bi-search search-icon" viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+        </div>
+        <div class="ml-lg-2 btnLogin" href="" ><a style=" color:#ffffff"  href="Dang_ki.html">Đăng ký</a></div>
+        <div class="ml-lg-2 btnLogin"> <a style=" color:#ffffff"  href="Dang_nhap.html">Đăng nhập</a></div>
+		    <div class="ml-lg-2 btnLogin"> <a style=" color:#ffffff"  href="Dang_nhap.html">Giỏ hàng </a></div>
+      </div>
+    </nav>
+  </div>
+  <div class="warpper mt-2">
+      <form class="custom-form">
+        <div style="padding-bottom: 50px;">
+          <h1>Đăng kí thông tin đặt hàng</h1>
+</div>
+       <form action="/submit-form" method="post" onsubmit="return validateForm()">
+					<label for="fullname" style="font-weight: bold;">Họ và Tên:*</label>
+					<input class="form-control input-form " type="text" id="fullname" name="fullname" required>
+		   			<span id="emailError" class="error"></span>
+					<label for="email"  style="font-weight: bold;">Email:*</label><br>
+					<input class="form-control input-form " type="email" id="email" name="email"  required>
+					<span id="fullnameError" class="error"></span>
+		   			<label for="fullname" style="font-weight: bold;">Điện thoại:*</label><br> 
+		  			<input class="form-control input-form " type="tel" name="phone" pattern="[0-9]+" required><span id="phone" class="error"></span>  
+		  			<label for="fullname" style="font-weight: bold;">Địa chỉ:*</label><br> 
+					<input class="form-control input-form "  type="text" name="address" required ><span id="address" class="error"></span>
+		   			<span id="EmailError" class="error"></span>
+					<label for="gender"  style="font-weight: bold;">Giới tính:</label><br>
+					<select id="gender" name="gender" required>
+						<option value="">giới tính</option>
+						<option value="male">Nam</option>
+						<option value="female">Nữ</option>
+						<option value="other">Khác</option>
+					</select>
+					<span id="genderError" class="error"></span><br>
+					<label for="birthday"  style="font-weight: bold;">Ngày sinh:</label><br>
+					<input type="date" id="birthday" name="birthday" required><br>
+					<span id="birthdayError" class="error"></span><br>
+		   <button type="submit" class="btn btn-primary btn-block" style="font-weight: bold;"   onclick="sendOTP();">Đặt hàng</button>
+</form> 
+		  </form>
+		  </div>
+<script>
+	function sendOTP() {
+        
+        alert("Đặt hàng thành công");
+      }
+function validateForm() {
+  var email = document.getElementById("email");
+  var fullname = document.getElementById("fullname");
+  var gender = document.getElementById("gender");
+  var birthday = document.getElementById("birthday");
+  var emailError = document.getElementById("emailError");
+  var fullnameError = document.getElementById("fullnameError");
+  var genderError = document.getElementById("genderError");
+  var birthdayError = document.getElementById("birthdayError");
+
+  if (email.value === "") {
+    emailError.textContent = "Vui lòng nhập email.";
+    email.focus();
+    return false;
+  } else if (!email.checkValidity()) {
+    emailError.textContent = "Vui lòng nhập đúng định dạng email.";
+    email.focus();
+    return false;
+  }
+
+  if (fullname.value === "") {
+    fullnameError.textContent = "Vui lòng nhập họ và tên.";
+    fullname.focus();
+    return false;
+  }
+
+  if (gender.value === "") {
+    genderError.textContent = "Vui lòng chọn giới tính.";
+    gender.focus();
+    return false;
+  }
+
+  if (birthday.value === "") {
+    birthdayError.textContent = "Vui lòng chọn ngày sinh.";
+    birthday.focus();
+    return false;
+  }
+
+  return true;
+}
+	
+</script>
+
+<style>
+.error {
+  color: red;
+}
+</style> 
+  <hr>
+</body>
+</html>

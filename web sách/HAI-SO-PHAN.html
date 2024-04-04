@@ -1,0 +1,238 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAI SỐ PHẬN</title>
+    <link rel="stylesheet" href="style/truyen.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- This is NavigationBar -->
+    <div class="topMainPage">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="topNav bg-light" style="z-index: 3; position: relative">
+      <nav class="container navbar navbar-expand-lg bg-light navbar-light">
+        <a class="navbar-brand" href="index.html">FAHASA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="navbar-brand" href="GIOI-THIEU.html"> Giới thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                >Thể loại</a
+              >
+              <div
+                class="dropdown-menu mega-dropdown-category"
+                aria-labelledby="navbarDropdown"
+              >
+                <div class="d-flex flex-column dropdown-distance">
+                  <a href="HAI-SO-PHAN.html">Tiểu thuyết</a>
+                  <a href="TOI-AC.html">Thần thoại</a>
+                  <a href="NGHI-GIAU.html">Làm giàu</a>
+                  <a href="HAY-SONG-CUOC.html">Kinh tế</a>
+                  <a href="NHA-GIA-KIM.html">Tâm lý </a>
+                  <a href="TOI-THAY.html">Thiếu nhi</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-toggle="dropdown"
+                >Giá tiền</a
+              >
+              <div
+                class="dropdown-menu mega-dropdown-status"
+                aria-labelledby="navbarDropdown"
+              >
+                <div class="d-flex flex-column dropdown-distance">
+                  <a>100-200</a>
+                  <a>200-500</a>
+                  <a>trên 500</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0 custome-navbar-search">
+            <input
+              class="form-control mr-sm-2 w-100 border-search"
+              type="tìm kiếm"
+              placeholder="Tìm kiếm"
+              aria-label="Search"
+            />
+            <svg
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search search-icon"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </div>
+          <div class="ml-lg-2 btnLogin" href="">
+            <a style="color: #ffffff" href="Dang_ki.html">Đăng ký</a>
+          </div>
+          <div class="ml-lg-2 btnLogin">
+            <a style="color: #ffffff" href="Dang_nhap.html">Đăng nhập</a>
+          </div>
+          <div class="ml-lg-2 btnLogin">
+            <a style="color: #ffffff" href="GIO-HANG.html">Giỏ hàng </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="chapter-info">
+      <div class="container" style="font-size: 18px">
+        <div>
+          <div class="row updated-Container ml-1 mt-2">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <img
+                class="updated-story-image"
+                src="image/hsp_-_bia_mem_-_b1_efcbf0a543a844ccba76c9984b4e6b18_master.jpg"
+                style="height: 350px"
+              />
+
+              <button
+                type="submit"
+                class="btn btn-primary btn-block"
+                style="font-weight: bold"
+                onclick="sendOTP();"
+              >
+                Mua
+              </button>
+              <script>
+                function sendOTP() {
+                  alert("Đã thêm vào giỏ hàng");
+                }
+              </script>
+            </div>
+            <div class="col-xl-8 col-lg-6 col-md-6">
+              <p class="kieuchu">HAI SỐ PHẬN</p>
+              <p><b>Giá: 100,000</b></p>
+              <p>Tác giả: Jeffrey Archer</p>
+              <p>Dịch giả: Nguyễn Việt Hải</p>
+              <p>Nhà xuất bản: Văn Học</p>
+              <p>Lượt mua : 12341</p>
+              <div>
+                Jeffrey Archer là nhà văn người Anh và cũng là một chính trị
+                gia. Ông từng là một thành viên của Quốc hội và Phó Chủ tịch
+                Đảng Bảo thủ.
+              </div>
+              <div id="demo" class="collapse">
+                HAI SỐ PHẬN (tên gốc tiếng Anh là Kane and Abel) là cuốn tiểu
+                thuyết được ông viết dựa theo câu chuyện của anh em Cain và Abel
+                trong Kinh Thánh Cựu Ước. Truyện kể về hai người đàn ông với
+                xuất thân địa vị xã hội và hoàn cảnh sống hoàn toàn khác nhau
+                nhưng có chung một đức tính là luôn chiến đấu hết mình để chinh
+                phục những điều mà mình đã đặt ra. Họ là những người có hoài
+                bão, lý tưởng sống và trên hết họ có một tâm hồn cao quý.<br />
+                William Lowell Kane là một người mạnh mẽ và giàu có trong khi đó
+                Abel Rosnovski là một người gốc Ba Lan phải đấu tranh từ lúc
+                sinh ra và lớn lên cùng với những người nghèo khổ, cuối cùng di
+                cư đến Hoa Kỳ…. William tiếp nối sự nghiệp của cha mình là
+                Richard Kane, để trở thành một chủ ngân hàng thành công. Trong
+                khi William vẫn còn là một đứa trẻ, cha của anh đã chết trong
+                thảm họa tàu Titanic. Người cha mất đi đã biến anh trở thành
+                người thừa kế của ngân hàng Kane & Cabot. William đã thể hiện là
+                một con người có tính kỷ luật và thông minh như những học sinh
+                khác của trường St. Paul's School và sau đó là ở Harvard…<br />
+                HAI SỐ PHẬN là câu chuyện cuộc đời của hai con người đã bằng
+                những tài năng của mình làm giàu cho quê hương. Con mắt tinh đời
+                với những phán đoán sắc sảo về lĩnh vực kinh tế trên hết họ đặt
+                nguyên tắc kinh doanh lên hàng đầu để vượt lên bằng chính khả
+                năng của bản thân.
+              </div>
+              <a href="#demo" data-toggle="collapse">Xem thêm</a>
+            </div>
+            <br />
+            <div class="col-xl-12">
+              <br />
+              <div id="accordion">
+                <hr />
+                <div class="col-12">
+                  <h3>Bình Luận</h3>
+                  <div class="media border p-3">
+                    <img
+                      src="image/cat.jpg"
+                      alt="John Doe"
+                      class="mr-3 mt-3 rounded-circle"
+                      style="width: 60px"
+                    />
+                    <div class="media-body">
+                      <textarea
+                        rows="3"
+                        class="w-100"
+                        placeholder="Thêm bình luận"
+                      ></textarea>
+                      <div class="media p-3">
+                        <img
+                          src="image/cat.jpg"
+                          alt="Jane Doe"
+                          class="mr-3 mt-3 rounded-circle"
+                          style="width: 45px"
+                        />
+                        <div class="media-body">
+                          <h4>
+                            xyz <small><i>01/02/2024 9:20</i></small>
+                          </h4>
+                          <p>Quá hay quá tuyệt vời</p>
+                        </div>
+                      </div>
+                      <div class="media p-3">
+                        <img
+                          src="image/Facebook-Avatar_3.png"
+                          alt="Jane Doe"
+                          class="mr-3 mt-3 rounded-circle"
+                          style="width: 45px"
+                        />
+                        <div class="media-body">
+                          <h4>
+                            abc <small><i>01/01/2024 17:20</i></small>
+                          </h4>
+                          <p>Sách hay, ý nghĩa</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

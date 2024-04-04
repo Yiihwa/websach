@@ -1,0 +1,280 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIỎ HÀNG</title>
+    <link rel="stylesheet" href="style/truyen.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- This is NavigationBar -->
+    <div class="topMainPage">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="topNav bg-light" style="z-index: 3; position: relative">
+      <nav class="container navbar navbar-expand-lg bg-light navbar-light">
+        <a class="navbar-brand" href="index.html">FAHASA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="navbar-brand" href="GIOI-THIEU.html"> Giới thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                >Thể loại</a
+              >
+              <div
+                class="dropdown-menu mega-dropdown-category"
+                aria-labelledby="navbarDropdown"
+              >
+                <div class="d-flex flex-column dropdown-distance">
+                  <a href="Hai-so-phan.html">Tiểu thuyết</a>
+                  <a href="TOI-AC.html">Thần thoại</a>
+                  <a href="NGHI-GIAU.html">Làm giàu</a>
+                  <a href="HAY-SONG-CUOC.html">Kinh tế</a>
+                  <a href="NHA-GIA-KIM.html">Tâm lý </a>
+                  <a href="TOI-THAY.html">Thiếu nhi</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-toggle="dropdown"
+                >Giá tiền</a
+              >
+              <div
+                class="dropdown-menu mega-dropdown-status"
+                aria-labelledby="navbarDropdown"
+              >
+                <div class="d-flex flex-column dropdown-distance">
+                  <a>100-200</a>
+                  <a>200-500</a>
+                  <a>trên 500</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0 custome-navbar-search">
+            <input
+              class="form-control mr-sm-2 w-100 border-search"
+              type="tìm kiếm"
+              placeholder="Tìm kiếm"
+              aria-label="Search"
+            />
+            <svg
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search search-icon"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </div>
+          <div class="ml-lg-2 btnLogin" href="">
+            <a style="color: #ffffff" href="Dang_ki.html">Đăng ký</a>
+          </div>
+          <div class="ml-lg-2 btnLogin">
+            <a style="color: #ffffff" href="Dang_nhap.html">Đăng nhập</a>
+          </div>
+          <div class="ml-lg-2 btnLogin">
+            <a style="color: #ffffff" href="Dang_nhap.html">Giỏ hàng </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="chapter-info">
+      <div class="container" style="font-size: 18px">
+        <div>
+          <div class="row updated-Container ml-1 mt-2">
+            <div class="col-lg-6 col-md-6 col-xl-12">
+              <p class="kieuchu">GIỎ HÀNG</p>
+              <div class="row">
+                <div class="col col-md-12">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Đơn giá</th>
+                        <th>Thành tiền</th>
+                        <th>Hành động</th>
+                      </tr>
+                    </thead>
+                    <tbody id="datarow">
+                      <tr>
+                        <td>1</td>
+
+                        <td id="ten">HAI SỐ PHẬN</td>
+                        <td class="text-right">
+                          <input
+                            type="number"
+                            id="qty"
+                            value="1"
+                            min="1"
+                            onclick="hienthi()"
+                          />
+                        </td>
+                        <td class="text-right" id="pro" data-price="100000">
+                          100,000
+                        </td>
+                        <td class="text-right"><span id="amount">0 </span></td>
+                        <td>
+                          <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                          <a
+                            id="delete_1"
+                            data-sp-ma="2"
+                            class="btn btn-danger btn-delete-sanpham"
+                          >
+                            <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+
+                        <td id="ten">NHÀ GIẢ KIM</td>
+                        <td class="text-right">
+                          <input
+                            type="number"
+                            id="qty"
+                            value="1"
+                            min="1"
+                            onclick="hienthi()"
+                          />
+                        </td>
+                        <td class="text-right" id="pro" data-price="101000">
+                          101,000
+                        </td>
+                        <td class="text-right"><span id="amount1">0 </span></td>
+                        <td>
+                          <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                          <a
+                            id="delete_2"
+                            data-sp-ma="6"
+                            class="btn btn-danger btn-delete-sanpham"
+                          >
+                            <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+
+                        <td id="name">ĐẮC NHÂN TÂM</td>
+                        <td class="text-right">
+                          <input
+                            type="number"
+                            id="qty"
+                            value="1"
+                            min="1"
+                            onclick="hienthi()"
+                          />
+                        </td>
+                        <td class="text-right" id="pro" data-price="101000">
+                          101,000
+                        </td>
+                        <td class="text-right"><span id="amount2">0 </span></td>
+                        <td>
+                          <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                          <a
+                            id="delete_3"
+                            data-sp-ma="4"
+                            class="btn btn-danger btn-delete-sanpham"
+                          >
+                            <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <a href="index.html" class="btn btn-warning btn-md"
+                    ><i class="fa fa-arrow-left" aria-hidden="true"
+                      >Quay về trang chủ</i
+                    ></a
+                  >
+                  <a href="TT.html" class="btn btn-primary btn-md"
+                    ><i class="fa fa-shopping-cart" aria-hidden="true"
+                      >Thanh toán</i
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function hienthi() {
+        var ten = document.getElementById("ten");
+        var qty = document.getElementById("qty");
+        var pro = document.getElementById("pro");
+        var giasp = pro.getAttribute("data-price");
+        var soluongsp = qty.value;
+        var tinhtien = giasp * soluongsp;
+        document.getElementById("name").innerText = ten.innerText;
+        document.getElementById("amount").innerText = "" + tinhtien;
+      }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Lấy tất cả các phần tử input số lượng
+        var qtyInputs = document.querySelectorAll("input[type='number']");
+
+        // Duyệt qua từng input số lượng và thêm sự kiện onchange
+        qtyInputs.forEach(function (qtyInput) {
+          qtyInput.addEventListener("change", function () {
+            var parentRow = this.closest("tr"); // Lấy ra dòng cha của input
+            var priceCell = parentRow.querySelector(".pro"); // Tìm ô chứa giá tiền
+            var totalPriceCell = parentRow.querySelector(".total-price"); // Tìm ô chứa tổng tiền
+            var quantity = parseInt(this.value); // Số lượng mới nhập vào
+            var price = parseInt(priceCell.getAttribute("data-price")); // Giá sản phẩm
+            var totalPrice = quantity * price; // Tính tổng tiền mới
+
+            // Hiển thị tổng tiền mới
+            totalPriceCell.innerText = totalPrice.toLocaleString("vi-VN", {
+              style: "currency",
+              currency: "VND",
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
